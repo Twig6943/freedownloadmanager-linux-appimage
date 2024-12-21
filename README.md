@@ -28,13 +28,13 @@ FDM was initially proprietary software, but was free and open-source software be
 
 ### Build Instructions
 ```
- git clone https://github.com/gauthamp10/freedownloadmanager-linux-appimage && cd freedownloadmanager-linux-appimage
+git clone https://github.com/twig6943/freedownloadmanager-linux-appimage && cd freedownloadmanager-linux-appimage
  
- wget -c https://github.com/$(wget -q https://github.com/AppImage/pkg2appimage/releases -O - | grep "pkg2appimage-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2)
+wget https://github.com/AppImageCommunity/pkg2appimage/releases/download/continuous/pkg2appimage--x86_64.AppImage
  
- chmod +x ./pkg2appimage-*.AppImage
+chmod +x ./pkg2appimage-*.AppImage
  
- ./pkg2appimage-*.AppImage recipes/freedownloadmanager.yml
+./pkg2appimage-*.AppImage recipes/freedownloadmanager.yml
  
 ```
 ### Screenshot
